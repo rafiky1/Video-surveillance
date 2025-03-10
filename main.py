@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 # Load API Key and set up Google Cloud authentication
 load_dotenv()
 GCP_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
-BUCKET_NAME = "your-gcp-bucket-name"  # Replace with your GCP bucket name
+BUCKET_NAME = "my-surveillance-bucket" 
 
 if not GCP_CREDENTIALS:
     raise ValueError("Google Cloud Credentials not found. Set GOOGLE_APPLICATION_CREDENTIALS in .env")
